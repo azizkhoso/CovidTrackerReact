@@ -2,8 +2,12 @@ import React from "react";
 import Card from "../Components/Card";
 import "./styles.css";
 import "../public/w3.css";
+import CovidChart from "../Components/CovidChart";
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="w3-container">
@@ -17,6 +21,9 @@ export default class App extends React.Component {
           <Card cardHeading="Recoverd Cases" backgroundColor="w3-green" />
           <Card cardHeading="Critical Cases" backgroundColor="w3-red" />
           <Card cardHeading="Deaths" backgroundColor="w3-orange" />
+        </div>
+        <div className="w3-row">
+          <CovidChart />
         </div>
       </div>
     );
