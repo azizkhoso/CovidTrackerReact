@@ -1,10 +1,16 @@
-import "./styles.css";
+import React from "react";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+import "./styles.css";
+import "../public/w3.css";
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="w3-container">
+        <h1 className="w3-row w3-header w3-center w3-indigo">
+          My Covid19 Tracker in React
+        </h1>
+      </div>
+    );
+  }
 }
